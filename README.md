@@ -3,7 +3,7 @@
 
 ```
 As a Makers Student
-So that I can access my links
+So that I can easily access my links
 I want to see a list of all my links
 ```
 
