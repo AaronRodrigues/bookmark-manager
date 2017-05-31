@@ -113,7 +113,7 @@ DEPENDENCIES
   database_cleaner
   dm-postgres-adapter
   rspec
-  sinatra
+  sinatra (= 2.0.0)
 
 RUBY VERSION
    ruby 2.4.0p0
