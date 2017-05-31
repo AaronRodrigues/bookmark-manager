@@ -3,6 +3,10 @@ require 'capybara/rspec'
 require 'rspec'
 require './app/models/link'
 require File.join(File.dirname(__FILE__), '..', 'app.rb')
+require 'database_cleaner'
+
+DatabaseCleaner.strategy = :truncation
+
 
 ENV['RACK_ENV'] = 'test'
 
