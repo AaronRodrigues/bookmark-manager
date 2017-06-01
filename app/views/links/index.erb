@@ -1,9 +1,4 @@
 <h1> Links </h1>
-
-<form action="/links/new">
-  <input type="submit" name="Add new link" value="Add new link">
-</form>
-
 <ul id='links'>
   <% @links.each do |link| %>
     <li>
@@ -12,3 +7,5 @@
     </li>
   <% end %>
 </ul>
+
+<a href="links/new">Create New</a>
