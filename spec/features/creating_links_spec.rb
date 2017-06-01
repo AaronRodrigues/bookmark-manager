@@ -1,7 +1,6 @@
 feature 'adding links' do
   scenario 'adding site address and title' do
-    visit '/links'
-    click_button('Add new link')
+    visit '/links/new'
     fill_in('URL', :with => 'https://www.facebook.com')
     fill_in('title', :with => 'Facebook')
     click_button('Add')
