@@ -1,7 +1,10 @@
-def sign_up
-  visit '/users/new'
-  expect(page.status_code).to eq(200)
-  fill_in :email, with: 'ben@jerrys.com'
-  fill_in :password, with: '1234'
-  click_button('Sign up')
-end
+# def sign_up(email: 'ben@jerrys.com',
+#             password: '1234',
+#             password_confirmation: '1234')
+#   visit '/users/new'
+#   expect(page.status_code).to eq(200)
+#   fill_in :email, with: email
+#   fill_in :password, with: password
+#   fill_in :password_confirmation, with: password_confirmation
+#   click_button('Sign up')
+# end
