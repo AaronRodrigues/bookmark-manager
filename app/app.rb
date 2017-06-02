@@ -29,9 +29,9 @@ class Bookmark < Sinatra::Base
     redirect '/links'
   end
 
-  get 'users/new' do
+  get '/users/new' do
     erb :'users/new'
   end
 
-  run! if app_file == $PROGRAM_NAME
+  run! if app_file == $0
 end
