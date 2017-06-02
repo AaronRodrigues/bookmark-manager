@@ -11,6 +11,10 @@ feature 'User can sign up for an account ' do
     expect(page).to have_content('Password and confirmation password do not match')
   end
 
+  scenario 'Requires an email address' do
+    expect { sign_up(email: nil) }.not_to change(User, :count)
+  end
+
   def sign_up(email: 'ben@jerrys.com',
               password: '1234',
               password_confirmation: '1234')
