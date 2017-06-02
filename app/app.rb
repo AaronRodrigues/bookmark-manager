@@ -30,7 +30,7 @@ class Bookmark < Sinatra::Base
   end
 
   get 'users/new' do
-    erb :'users/user'
+    erb :'users/new'
   end
 
   run! if app_file == $PROGRAM_NAME
